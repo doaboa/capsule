@@ -1,0 +1,4 @@
+db:
+  user: root
+  password: password
+  database: capsule_dev

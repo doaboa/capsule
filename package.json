@@ -1,0 +1,38 @@
+{
+  "name": "capsule",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "bootstrap": "mysql -uroot -ppassword -e \"CREATE DATABASE IF NOT EXISTS capsule_dev;\" & knex migrate:latest",
+    "start": "node server",
+    "watch": "nodemon server -w server/",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "classnames": "^2.2.5",
+    "config": "^1.30.0",
+    "express": "^4.15.3",
+    "js-yaml": "^3.11.0",
+    "knex": "^0.14.4",
+    "mysql": "^2.15.0",
+    "parcel-bundler": "^1.6.2",
+    "prop-types": "^15.6.1",
+    "react": "^15.5.4",
+    "react-dom": "^15.5.4",
+    "react-textarea-autosize": "^6.0.0",
+    "space-router": "^0.5.1",
+    "tiny-atom": "^0.4.0",
+    "zaphod": "^0.2.1"
+  },
+  "devDependencies": {
+    "nodemon": "^1.17.1",
+    "standard": "^11.0.1"
+  },
+  "browserslist": [
+    "> 15%"
+  ]
+}
